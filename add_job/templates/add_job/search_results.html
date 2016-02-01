@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+    {% if jobs %}
+        <p>Znalazłem {{ jobs|length }} zawody.</p>
+        <ul>
+            {% for job in jobs %}
+            <li>{{ job.stanowisko }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No books matched your search criteria.</p>
+    {% endif %}
+
+{% endblock %}
+
+

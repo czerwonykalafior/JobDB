@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header>
+        <div class="jumbotron">
+
+            <div class="text-center">
+                <h1>Baza zawodów</h1>
+                <h2>Czym się zajmujesz?</h2>
+                <p>Stwórz z nami bazę zawodów! Podziel się tym co robisz i pomóż innym znaleść swoj wymarzony zawód
+                    o którym nigdy nie słyszeli.</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="text-center">
+            <h1>
+            <a href="{% url 'add_job.views.add_job_form' %}" class="btn-link">
+
+
+            DODAJ SWOJ ZAWÓD
+                </a>
+            </h1>
+
+        </div>
+    </div>
+{% endblock %}
